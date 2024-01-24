@@ -10,22 +10,31 @@ html {
 :root {
     --font-heading: Sen, sans-serif;
     --primary-color: #ffb900;
+    --color-header: #fff4d6;
+    --color-hover: #35b6a0;
 }
 
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 90px;
+    margin-left: 90px;
 }
-main{
-    background-color: #FFFCF4;
-    border-radius: 5px;
+
+.header {
+    background-color: var(--color-header);
+    border-radius: 20px 20px 10px 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .header .body {
     display: flex;
     padding: 36px 0 8px;
+}
+
+.main-content {
+    width: 1170px;
 }
 
 .header.fixed {
@@ -78,7 +87,7 @@ main{
 
 .cta-gr a.btn:hover {
     opacity: 0.9;
-    background-color: #35b6a0;
+    background-color: var(--color-hover);
 }
 
 .nav ul li:first-child {
@@ -191,7 +200,7 @@ main{
 
 .btn-watch-video {
     border: none;
-    background-color: #FFFCF4;
+    background-color: var(--color-header);
     display: flex;
     align-items: center;
     margin-left: 100px;
@@ -219,6 +228,9 @@ main{
     border-radius: 50%;
     cursor: pointer;
 }
+.btn-watch-video .icon:hover{
+    background-color: var(--color-hover);
+}
 
 .content-block .desc strong {
     color: #171100;
@@ -240,9 +252,39 @@ main{
     margin-top: 0px;
     /* 166.667% */
 }
-.content-block .content-desc{
+
+.content-block .content-desc {
     display: flex;
     width: 440px;
-    margin-top: 10px;;
+    margin-top: 10px;
+    ;
     justify-content: space-between;
+}
+.popular{
+    padding-top: 65px;
+    margin-top: 135px;
+}
+.popular .popular-top{
+    display: flex;
+}
+.popular .controls{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.popular .btn-control{
+    background-color: #e7e7e7;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+}
+.popular .btn-control:hover
+{
+    background-color: var(--color-hover);
 }
