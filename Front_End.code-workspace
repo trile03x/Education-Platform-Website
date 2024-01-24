@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../Project1"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../amazon-project"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Front_End"
+	}
+}

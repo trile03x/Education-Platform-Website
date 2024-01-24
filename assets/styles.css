@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --font-heading: Sen, sans-serif;
+    --primary-color: #ffb900;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+main{
+    background-color: #FFFCF4;
+    border-radius: 5px;
+}
+
+.header .body {
+    display: flex;
+    padding: 36px 0 8px;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.nav ul {
+    display: flex;
+    margin-right: 300px;
+}
+
+.nav-action {
+    display: flex;
+    align-items: center;
+}
+
+.nav-action {
+    margin-left: auto;
+}
+
+.action .btn.sign-up {
+    background-color: black;
+    /* Màu nền */
+    color: white;
+    /* Màu chữ */
+    padding: 10px 20px;
+    /* Độ lớn của nút */
+    font-size: 16px;
+    /* Cỡ chữ */
+    border-radius: 24.5px;
+    /* Độ cong góc */
+    cursor: pointer;
+}
+
+.nav ul li a {
+    margin-left: 70px;
+    color: brown;
+    position: relative;
+}
+
+.nav ul li a:hover {
+    color: rgb(63, 21, 216);
+    text-shadow: 1px 0px 0px currentColor;
+}
+
+.btn.sign-up:hover {
+    color: rgb(57, 212, 26);
+}
+
+.cta-gr a.btn:hover {
+    opacity: 0.9;
+    background-color: #35b6a0;
+}
+
+.nav ul li:first-child {
+    font-weight: bold;
+}
+
+.nav li.active a::after {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #171100;
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+}
+
+.item .title {
+    font-weight: bold;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item .info {
+    margin-left: 20px;
+}
+
+.media-block {
+    position: relative;
+}
+
+.hero-summary {
+    position: absolute;
+    right: 0;
+    line-height: 2px;
+    bottom: 48px;
+    ;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero {
+    padding-top: 56px;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.media-block {
+    width: 48%;
+}
+
+.hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgb(239, 250, 228);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.hero-summary .item:nth-of-type(2) .icon {
+    background: rgb(190, 224, 155);
+}
+
+.hero-summary .item:nth-of-type(3) .icon {
+    background: rgb(179, 184, 174);
+}
+
+.content-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.hero .cta-gr {
+    margin: 38px 0 48px;
+}
+
+.hero .heading {
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+    font-family: var(--font-heading);
+}
+
+.cta-gr .btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.hero .desc {
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+    margin-top: 22px;
+}
+
+.btn-watch-video {
+    border: none;
+    background-color: #FFFCF4;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.cta-gr {
+    display: flex;
+    align-items: center;
+}
+
+.btn-watch-video span {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.btn-watch-video .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4e4d6;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content-block .desc strong {
+    color: #171100;
+    font-family: Sen;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    /* 122.727% */
+}
+
+.content-block .desc {
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 0px;
+    /* 166.667% */
+}
+.content-block .content-desc{
+    display: flex;
+    width: 440px;
+    margin-top: 10px;;
+    justify-content: space-between;
+}
