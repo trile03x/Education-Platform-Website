@@ -7,6 +7,18 @@ html {
     font-size: 62.5%;
 }
 
+.heading {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #171100;
+    font-family: var(--font-heading);
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
 :root {
     --font-heading: Sen, sans-serif;
     --primary-color: #ffb900;
@@ -37,7 +49,7 @@ body {
     width: 1170px;
 }
 
-.header.fixed {
+.header .header.fixed {
     position: sticky;
     top: -28px;
 }
@@ -174,15 +186,6 @@ body {
     margin: 38px 0 48px;
 }
 
-.hero .heading {
-    font-weight: 700;
-    font-size: 5.8rem;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: #171100;
-    font-family: var(--font-heading);
-}
-
 .cta-gr .btn {
     background-color: var(--primary-color);
     color: #ffffff;
@@ -191,9 +194,7 @@ body {
     font-size: 16px;
 }
 
-.hero .desc {
-    font-size: 1.8rem;
-    line-height: 1.67;
+.desc {
     color: #5f5b53;
     margin-top: 22px;
 }
@@ -228,7 +229,8 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
-.btn-watch-video .icon:hover{
+
+.btn-watch-video .icon:hover {
     background-color: var(--color-hover);
 }
 
@@ -260,19 +262,29 @@ body {
     ;
     justify-content: space-between;
 }
-.popular{
+
+.popular {
     padding-top: 65px;
     margin-top: 135px;
 }
-.popular .popular-top{
+
+.popular .popular-top {
     display: flex;
 }
-.popular .controls{
+
+.heading.lv2 {
+    font-size: 38px;
+    line-height: 1.26;
+    margin-bottom: 15px;
+}
+
+.popular .controls {
     margin-left: auto;
     display: flex;
     align-items: center;
 }
-.popular .btn-control{
+
+.popular .btn-control {
     background-color: #e7e7e7;
     width: 35px;
     height: 35px;
@@ -284,7 +296,74 @@ body {
     justify-content: center;
     margin-left: 25px;
 }
-.popular .btn-control:hover
-{
+
+.popular .btn-control:hover {
     background-color: var(--color-hover);
+}
+
+.popular-top .desc {
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.popular .info.lv1{
+    width: 40%;
+}
+.coures-list{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.coure-item {
+    border: 1px solid black;
+    width: 31.67%;
+    border-radius: 15px;
+}
+.coure-item .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular .info{
+    margin: 0px 15px 0px 15px;
+}
+.info .foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info .price{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+.info .btn{
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #171100;
+    cursor: pointer;
+}
+.info .btn:hover{
+    color: #ffffff;
+    background-color: var(--color-hover);
+}
+.desc.lv3{
+    margin-top: 2px;
+}
+.info .rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffb900;
+}
+.info .rating .value{
+    margin-left: 10px;
 }
